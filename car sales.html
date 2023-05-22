@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Page</title>
+
+    <style>
+
+        *{
+
+            box-sizing: border-box;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 16px;
+
+        }
+
+
+
+
+        fieldset#fldsetform{
+
+            width: 80%;
+
+            margin: auto;
+
+            color: lightskyblue;
+
+            border-radius: 5px;
+
+        }
+
+
+
+
+        label{
+
+            width: 150px;
+
+            display: inline-block;
+
+            color: teal;
+
+        }
+
+
+
+
+        label::before{
+
+            content:"💎";
+
+        }
+
+
+
+
+        input[type="text"],
+
+        input[type="password"],
+
+        input[type="date"],
+
+        input[type="email"],
+
+        select{
+
+            width: 400px;
+
+            height: 27px;
+
+            border: 1px solid turquoise;
+
+            border-radius: 3px;
+
+            margin-bottom: 3px;
+
+        }
+
+
+
+
+        input[type="reset"],
+
+        input[type="submit"]
+
+        {
+
+            width: 100px;
+
+            height: 27px;
+
+            color: crimson;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+   
+
+    <section id="scnform">
+
+
+
+
+        <form id="register" name="register">
+
+
+
+
+            <fieldset id="fldsetform">
+
+                <legend>Registration Form</legend>
+
+
+
+
+                <input type="hidden" name="customerid" id="customerid"/>
+
+
+
+
+                <label for="emailaddress">Email Address </label>
+
+                <input type="email" name="emailaddress" id="emailaddress" placeholder="Email Address" required /><br/>
+
+
+
+
+                <label for="password">Password </label>
+
+                <input type="password" name="password" id="password" placeholder="Password" required /><br/>
+
+
+
+
+                <label for="firstname">Firstname </label>
+
+                <input type="text" name="firstname" id="firstname" placeholder="Firstname" required /><br/>
+
+
+
+
+                <label for="surname">Surname </label>
+
+                <input type="text" name="surname" id="firsurnamestname" placeholder="Surname" required /><br/>
+
+
+
+
+                <label for="gender">Gender</label>
+
+                <select name="gender" id="gender" onchange="alert(this.value)">
+
+                    <option value="0">Select ...</option>
+
+                    <option value="F">Female</option>
+
+                    <option value="M">Male</option>
+
+                </select><br/>
+
+
+
+
+                <label for="dob">Date Of Birth</label>
+
+                <input type="date" name="dob" id="dob" placeholder="DOB" required /><br/>
+
+
+
+
+                <label>Marital Status </label>
+
+                    <label><input type="radio" name="maritalstatus" id="maritalstatus_s" value="S" /> Single</label>
+
+                    <label><input type="radio" name="maritalstatus" id="maritalstatus_m" value="M" /> Married</label>
+
+                    <label><input type="radio" name="maritalstatus" id="maritalstatus_d" value="D" /> Divorced</label>
+
+                    <label><input type="radio" name="maritalstatus" id="maritalstatus_w" value="W" /> Widowed</label>
+
+                </label><br/>
+
+
+
+
+                <label>Models Preferred </label>
+
+                    <label><input type="checkbox" name="chkmodel" id="chkmodel_toyota" value="S" /> Toyota</label>
+
+                    <label><input type="checkbox" name="chkmodel" id="chkmodel_honda" value="M" /> Honda</label>
+
+                    <label><input type="checkbox" name="chkmodel" id="chkmodel_vw" value="D" /> VW</label>
+
+                    <label><input type="checkbox" name="chkmodel" id="chkmodel_ford" value="W" /> Ford</label>
+
+                </label><br/>
+
+                <hr>
+
+                <input type="submit" value="Submit" id="btnsubmit" name="btnsubmit">
+
+                <input type="reset" value="Reset" id="btnreset" name="btnreset">
+
+
+
+
+            </fieldset>
+
+
+
+
+        </form>
+
+
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>
